@@ -1,0 +1,141 @@
+[
+    {
+        "id": 1,
+        "name": "Anby Demara",
+        "element": "Electric",
+        "role": "Stun",
+        "rarity": "A",
+        "gender": "Female",
+        "faction": "Cunning Hares",
+        "height": 156,
+        "birthday": "February 20",
+        "version": 1.0,
+        "w-engine": "Demara Battery Mark II",
+        "image": "../images/anby-demara/anby-demara.webp",
+        "abilities": [
+            {
+                "id": 1,
+                "skill": "Basic",
+                "name": "Basic Attack: Turbo Volt",
+                "description": "Press [BA] to activate: Unleashes up to 4 slashes. The first 3 hits deal Physical DMG, the 4th hit deals Electric DMG."
+            },
+            {
+                "id": 2,
+                "skill": "Basic",
+                "name": "Basic Attack: Thunderbolt",
+                "description": "After unleashing the 3rd hit of the Basic Attack, hold down or pause for a short while, and then press [BA] to activate: Unleashes a downward strike that deals Electric DMG. Anti-Interrupt level is increased while using this skill."
+            },
+            {
+                "id": 3,
+                "skill": "Dodge",
+                "name": "Dodge: Slide",
+                "description": "Press [Dodge] to activate: A rapid dodge. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 4,
+                "skill": "Dodge",
+                "name": "Dash Attack: Taser Blast",
+                "description": "Press [BA] during a dodge to activate: Slashes all nearby enemies, dealing Physical DMG."
+            },
+            {
+                "id": 5,
+                "skill": "Dodge",
+                "name": "Dodge Counter: Thunderclap",
+                "description": "Press [BA] during a Perfect Dodge to activate: Slashes enemies in front, dealing Electric DMG. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 6,
+                "skill": "Assist",
+                "name": "Quick Assist: Thunderfall",
+                "description": "When the on-field character is launched, press [Assist] to activate: Slashes enemies in front, dealing Electric DMG. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 7,
+                "skill": "Assist",
+                "name": "Defensive Assist: Flash",
+                "description": "When the character on field is about to be attacked, press [Assist] to activate: Parries the enemy's attack, inflicting massive Daze. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 8,
+                "skill": "Assist",
+                "name": "Quick Assist: Thunderfall",
+                "description": "When the on-field character is launched, press [Assist] to activate: Slashes enemies in front, dealing Electric DMG. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 9,
+                "skill": "Special",
+                "name": "Special Attack: Fork Lightning",
+                "description": "Press [Special] to activate: Unleashes an upward slash that deals Electric DMG. This attack launches faster when used after the 3rd-hit of the Basic Attack or Basic Attack: Thunderbolt. Anti-Interrupt level is increased while using this skill."
+            },
+            {
+                "id": 10,
+                "skill": "Special",
+                "name": "EX Special Attack: Lightning Bolt",
+                "description": "When Anby has enough Energy, press [Special] to activate: Unleashes a powerful upward slash that deals Electric DMG. This attack launches faster when used after the 3rd hit of her Basic Attack or Basic Attack: Thunderbolt. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 11,
+                "skill": "Chain",
+                "name": "Chain Attack: Electro Engine",
+                "description": "When a Chain Attack is triggered, select the character to activate: Unleashes a powerful upwards slash at enemies in a small area, dealing massive Electric DMG. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 12,
+                "skill": "Chain",
+                "name": "Ultimate: Overdrive Engine",
+                "description": "When Decibel Rating is at Maximum, press [Ultimate] to activate: Unleashes a powerful upward slash at enemies in a small area followed by several falling attacks, dealing massive Electric DMG. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 13,
+                "skill": "Core",
+                "name": "Core Passive: Fluctuating Voltage",
+                "description": "Launch a Basic Attack: Thunderbolt, Special Attack, or EX Special Attack after the 3rd-hit of Anby's Basic Attack for an extra 32% Daze."
+            },
+            {
+                "id": 14,
+                "skill": "Core",
+                "name": "Additional Ability: Parallel Connection",
+                "description": "When another character in your squad shares the same Attribute or Faction: When Anby's Dodge Counter hits an enemy, she gains an extra 7.2 Energy. This effect can trigger once every 5s."
+            }
+        ],
+        "mindscape-cinema": [
+            {
+                "id": 1,
+                "name": "Rapid Charge Mode",
+                "description": "When the 4th hit of Anby's Basic Attack hits an enemy, her Energy Generation Rate is increased by 12% for 30s.",
+                "alt": "'Charge up for just a minute, and you're set to fight for an hour!' That's the sales pitch for these weapon expansion modules. And they deliver exactly that."
+            },
+            {
+                "id": 2,
+                "name": "Precision Discharge",
+                "description": "When Basic Attack: Thunderbolt hits a Stunned enemy, its DMG is increased by 30%. When Anby's EX Special Attack hits an enemy that is not Stunned, the Daze inflicted is increased by 10%.",
+                "alt": "'Electric shocks will knock you out cold.' Looking at the enemy out cold at her feet, she added: 'At least, that's what happens in the movies.'"
+            },
+            {
+                "id": 3,
+                "name": "Well-Disciplined",
+                "description":"Basic Attack, Dodge, Assist, Special Attack, and Chain Attack Lv. +2",
+                "alt": "Run, slash, move like lightning. She is no amateur when it comes to Hollows—she's an expert."
+            },
+            {
+                "id": 4,
+                "name": "Conducting Charge",
+                "description": "When Anby launches a Chain Attack or uses her Ultimate, off-field Electric Agents recover 3 Energy. For every 12% Energy Generation Rate Anby has, recover an additional 2 Energy, up to a maximum of 6.",
+                "alt": "You won't last long fighting solo. An experienced Hollow Raider knows how to create opportunities for their teammates."
+            },
+            {
+                "id": 5,
+                "name": "Street Experience",
+                "description": "Basic Attack, Dodge, Assist, Special Attack, and Chain Attack Lv. +2",
+                "alt": "Working for the Cunning Hares not only builds your mental toughness but also helps (or rather, forces) you to get in shape."
+            },
+            {
+                "id": 6,
+                "name": "Charging Field",
+                "description": "When Anby uses her EX Special Attack, she gains 8 stacks of Charge (max 8 stacks). When she hits an enemy with her Basic Attack or Dash Attack, 1 stack of Charge is consumed, increasing that attack's DMG by 45%.",
+                "alt": "Coils of electricity flickered over her fingertips. Anby raised her head, eyes brimming with determination beyond her years. Perhaps, one day, she will be the one with total mastery over electricity."
+            }
+        ]
+        
+    }
+]
