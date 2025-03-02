@@ -11,14 +11,17 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import { useRouter } from 'next/router';
 
+const title = 'ZZZVERSE';
 const pages = ['Agents', 'W-Engines', 'Drive Disks', 'Bangboos'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-export default function ZZZVerseAppBar() {
+export default function MainAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
+    const [anchorElAgent, setAnchorElAgent] = React.useState(null);
+    const router = useRouter();
   
     const handleOpenNavMenu = (event) => {
       setAnchorElNav(event.currentTarget);
@@ -26,7 +29,11 @@ export default function ZZZVerseAppBar() {
     const handleOpenUserMenu = (event) => {
       setAnchorElUser(event.currentTarget);
     };
-  
+    
+    const handleOpenAgentMenu = (event) => {
+      setAnchorElAgent(event.currentTarget);
+    };
+
     const handleCloseNavMenu = () => {
       setAnchorElNav(null);
     };
@@ -34,12 +41,22 @@ export default function ZZZVerseAppBar() {
     const handleCloseUserMenu = () => {
       setAnchorElUser(null);
     };
-  
+    
+    const handleCloseAgentMenu = () => {
+        setAnchorElAgent(null);
+    };
+
+    const handleSelectAgentMenu = (agentName) => {
+        setAnchorElAgent(null);
+        const agentRoute = agentName.toLowerCase().replace(/\s+/g, '-');
+        router.push(`/agents/${agentRoute}`);
+    }
+
     return (
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+
             <Typography
               variant="h6"
               noWrap
@@ -55,7 +72,7 @@ export default function ZZZVerseAppBar() {
                 textDecoration: 'none',
               }}
             >
-              LOGO
+              {title}
             </Typography>
   
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -92,7 +109,7 @@ export default function ZZZVerseAppBar() {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+
             <Typography
               variant="h5"
               noWrap
@@ -111,21 +128,49 @@ export default function ZZZVerseAppBar() {
             >
               LOGO
             </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, gap: 5 }}>
               {pages.map((page) => (
                 <Button
                   key={page}
-                  onClick={handleCloseNavMenu}
+                  onClick={page === 'Agents' ? handleOpenAgentMenu : handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   {page}
                 </Button>
               ))}
             </Box>
+
+            <Menu
+                id="agents-menu"
+                anchorEl={anchorElAgent}
+                open={Boolean(anchorElAgent)}
+                onClose={handleCloseAgentMenu}
+                anchorOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'left',
+                }}
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'left',
+                }}
+            >
+                <MenuItem onClick={() => handleSelectAgentMenu('Anby Demara')}>
+                <Typography sx={{ textAlign: 'center' }}>Anby Demara</Typography>
+                </MenuItem>
+                <MenuItem onClick={() => handleSelectAgentMenu('Nicole')}>
+                <Typography sx={{ textAlign: 'center' }}>Nicole</Typography>
+                </MenuItem>
+                <MenuItem onClick={() => handleSelectAgentMenu('Billy')}>
+                <Typography sx={{ textAlign: 'center' }}>Billy</Typography>
+                </MenuItem>
+            </Menu>
+
+
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                  <Avatar alt="ZZZ" src="/static/images/avatar/2.jpg" />
                 </IconButton>
               </Tooltip>
               <Menu
@@ -151,6 +196,7 @@ export default function ZZZVerseAppBar() {
                 ))}
               </Menu>
             </Box>
+
           </Toolbar>
         </Container>
       </AppBar>
