@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "anby-demara",
         "name": "Anby Demara",
         "element": "Electric",
         "role": "Stun",
@@ -9,21 +9,21 @@
         "faction": "Cunning Hares",
         "height": 156,
         "birthday": "February 20",
-        "version": 1.0,
+        "version": "1.0",
         "w-engine": "Demara Battery Mark II",
-        "image": "../images/anby-demara/anby-demara.webp",
+        "image": "/images/anby-demara/anby-demara.webp",
         "abilities": [
             {
                 "id": 1,
                 "skill": "Basic",
                 "name": "Basic Attack: Turbo Volt",
-                "description": "Press [BA] to activate: Unleashes up to 4 slashes. The first 3 hits deal Physical DMG, the 4th hit deals Electric DMG."
+                "description": "Press [Basic] to activate: Unleashes up to 4 slashes. The first 3 hits deal Physical DMG, the 4th hit deals Electric DMG."
             },
             {
                 "id": 2,
                 "skill": "Basic",
                 "name": "Basic Attack: Thunderbolt",
-                "description": "After unleashing the 3rd hit of the Basic Attack, hold down or pause for a short while, and then press [BA] to activate: Unleashes a downward strike that deals Electric DMG. Anti-Interrupt level is increased while using this skill."
+                "description": "After unleashing the 3rd hit of the Basic Attack, hold down or pause for a short while, and then press [Basic] to activate: Unleashes a downward strike that deals Electric DMG. Anti-Interrupt level is increased while using this skill."
             },
             {
                 "id": 3,
@@ -35,13 +35,13 @@
                 "id": 4,
                 "skill": "Dodge",
                 "name": "Dash Attack: Taser Blast",
-                "description": "Press [BA] during a dodge to activate: Slashes all nearby enemies, dealing Physical DMG."
+                "description": "Press [Basic] during a dodge to activate: Slashes all nearby enemies, dealing Physical DMG."
             },
             {
                 "id": 5,
                 "skill": "Dodge",
                 "name": "Dodge Counter: Thunderclap",
-                "description": "Press [BA] during a Perfect Dodge to activate: Slashes enemies in front, dealing Electric DMG. Character is invulnerable while using this skill."
+                "description": "Press [Basic] during a Perfect Dodge to activate: Slashes enemies in front, dealing Electric DMG. Character is invulnerable while using this skill."
             },
             {
                 "id": 6,
@@ -83,7 +83,7 @@
                 "id": 12,
                 "skill": "Chain",
                 "name": "Ultimate: Overdrive Engine",
-                "description": "When Decibel Rating is at Maximum, press [Ultimate] to activate: Unleashes a powerful upward slash at enemies in a small area followed by several falling attacks, dealing massive Electric DMG. Character is invulnerable while using this skill."
+                "description": "When Decibel Rating is at Maximum, press [Chain] to activate: Unleashes a powerful upward slash at enemies in a small area followed by several falling attacks, dealing massive Electric DMG. Character is invulnerable while using this skill."
             },
             {
                 "id": 13,
