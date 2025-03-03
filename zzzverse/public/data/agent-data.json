@@ -1,8 +1,8 @@
 [
     {
-        "id": "anby-demara",
+        "id": "anby",
         "name": "Anby Demara",
-        "element": "Electric",
+        "attribute": "Electric",
         "role": "Stun",
         "rarity": "A",
         "gender": "Female",
@@ -10,8 +10,14 @@
         "height": 156,
         "birthday": "February 20",
         "version": "1.0",
-        "w-engine": "Demara Battery Mark II",
-        "image": "/images/anby-demara/anby-demara.webp",
+        "weapon": {
+            "weaponName": "Demara Battery Mark II",
+            "weaponImage": "/images/anby/anby-weapon.webp",
+            "weaponBaseStat": "Base ATK (Lv 60: 624)",
+            "weaponSubStat": "Impact (Lv60: 15%)",
+            "weaponDescription": "For characters with the Stun Specialty, the following effects can be triggered: Increases Electric DMG by 15%. When the equipper hits an enemy with Dodge Counter or Assist Attack, their Energy Generation Rate increases by 18% for 8s."
+        },
+        "image": "/images/anby/anby.webp",
         "abilities": [
             {
                 "id": 1,
@@ -134,6 +140,151 @@
                 "name": "Charging Field",
                 "description": "When Anby uses her EX Special Attack, she gains 8 stacks of Charge (max 8 stacks). When she hits an enemy with her Basic Attack or Dash Attack, 1 stack of Charge is consumed, increasing that attack's DMG by 45%.",
                 "alt": "Coils of electricity flickered over her fingertips. Anby raised her head, eyes brimming with determination beyond her years. Perhaps, one day, she will be the one with total mastery over electricity."
+            }
+        ]
+        
+    },
+    {
+        "id": "miyabi",
+        "name": "Hoshimi Miyabi",
+        "attribute": "Frost",
+        "role": "Anomaly",
+        "rarity": "S",
+        "gender": "Female",
+        "faction": "Hollow Special Operations Section 6",
+        "height": 170,
+        "birthday": "June 19",
+        "version": "1.4",
+        "weapon": {
+                "weaponName": "Hailstorm Shrine",
+                "weaponImage": "/images/miyabi/miyabi-weapon.webp",
+                "weaponBaseStat": "Base ATK (Lv 60: 743)",
+                "weaponSubStat": "CRIT Rate (Lv60: 24%)",
+                "weaponDescription": "For characters with the Anomaly specialty, the following effects can be triggered: CRIT DMG increases by 50%. When using an EX Special Attack or when any squad member applies an Attribute Anomaly to an enemy, the equipper's Ice DMG increases by 20%, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately."
+        },
+        "image": "/images/miyabi/miyabi.webp",
+        "abilities": [
+            {
+                "id": 1,
+                "skill": "Basic",
+                "name": "Basic Attack: Kazahana",
+                "description": "Press [Basic] to activate: Unleashes up to five slashes ahead, the first two deal Physical DMG, and the last three deal Frost DMG. Block enemy attacks during the 5th hit of the Basic Attack."
+            },
+            {
+                "id": 2,
+                "skill": "Basic",
+                "name": "Basic Attack: Shimotsuki",
+                "description": "With at least 2 points of Fallen Frost, hold [Basic] to activate: Hoshimi Miyabi sheaths her blade, enters Shimotsuki Stance and starts to charge up. Every level of charge will consume 2 points of Fallen Frost, up to a maximum of three levels of charge. When releasing [Basic], or when Fallen Frost is completely depleted, Hoshimi Miyabi will draw her blade and unleash a powerful slash ahead based on the current charge level, dealing massive Frost DMG. She then exits Shimotsuki Stance. Character is invulnerable during Shimotsuki Stance. Hoshimi Miyabi can have up to 6 points of Fallen Frost. Upon entering the battlefield, Hoshimi Miyabi immediately obtains 3 points of Fallen Frost."
+            },
+            {
+                "id": 3,
+                "skill": "Dodge",
+                "name": "Dodge: Mizutori",
+                "description": "Press [Dodge] to activate: A quick dash dodge. Character is invulnerable while using this skill. While dodging, repeatedly press or hold [Dodge] to activate: A dash dodge that covers a lot of ground. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 4,
+                "skill": "Dodge",
+                "name": "Dash Attack: Fuyubachi",
+                "description": "Press [Basic] during a dodge to activate: Slashes enemies in front, dealing Physical DMG."
+            },
+            {
+                "id": 5,
+                "skill": "Dodge",
+                "name": "Dodge Counter: Kan Suzume",
+                "description": "Press [Basic] during a Perfect Dodge to activate: Slashes enemies in front, dealing Frost DMG. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 6,
+                "skill": "Assist",
+                "name": "Quick Assist: Dancing Petals",
+                "description": "When the on-field character is launched, press [Assist] to activate: Slashes enemies in front, dealing Frost DMG. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 7,
+                "skill": "Assist",
+                "name": "Defensive Assist: Drifting Petals",
+                "description": "When the character on field is about to be attacked, press [Assist] to activate: Parries the enemy's attack, inflicting massive Daze. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 8,
+                "skill": "Assist",
+                "name": "Assist Follow-up: Falling Petals",
+                "description": "Press [Basic] after a Defensive Assist to activate: Charges and slashes enemies in front, dealing Frost DMG. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 9,
+                "skill": "Special",
+                "name": "Special Attack: Miyuki",
+                "description": "Press [Special] to activate: Quickly draws her blade and slashes ahead, dealing Frost DMG. Anti-Interrupt level is increased while using this skill."
+            },
+            {
+                "id": 10,
+                "skill": "Special",
+                "name": "EX Special Attack: Hisetsu",
+                "description": "With enough Energy, press [Special] to activate: Rush forward, unleashing powerful slashes against enemies along the way, dealing massive Frost DMG. Upon activating this skill, gain 2 points of Fallen Frost. Character is invulnerable while using this skill. After using this skill, with enough Energy, press [Special] again to activate: Consume extra Energy and unleash a powerful follow-up attack against enemies in front, dealing massive Frost DMG. Upon activating this skill, gain 2 points of Fallen Frost. Character is invulnerable while using this skill"
+            },
+            {
+                "id": 11,
+                "skill": "Chain",
+                "name": "Chain Attack: Spring's Call",
+                "description": "When a Chain Attack is triggered, select the character to activate: Unleashes a powerful slash at enemies in front in a large area, dealing massive Frost DMG. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 12,
+                "skill": "Chain",
+                "name": "Ultimate: Lingering Snow",
+                "description": "When Decibel Rating is at Maximum, press [Chain] to activate: Unleashes powerful slashes at enemies ahead in a large area then pauses, before unleashing a Finishing Move, dealing massive Frost DMG. Upon activating this skill, gain 3 points of Fallen Frost and increase Ice DMG by 30% for 12s. Character is invulnerable while using this skill."
+            },
+            {
+                "id": 13,
+                "skill": "Core",
+                "name": "Core Passive: Searing Cold",
+                "description": "When Hoshimi Miyabi deals Frost DMG, she applies Icefire to the target, lasting 30s. When accumulating Frost Anomaly Buildup against targets with Icefire, increases Frost Anomaly Buildup Rate by 100% of Hoshimi Miyabi's CRIT Rate, up to a maximum increase of 80%. As Hoshimi Miyabi accumulates Frost Anomaly Buildup, it has its own independent Attribute Anomaly Buildup gauge and triggers Freeze, Shatter, and Frostbite that can react with other Attribute Anomalies, including Ice Attribute Anomaly, to trigger Disorder. When Hoshimi Miyabi applies Frostbite to enemies with Icefire, it will consume the Icefire to trigger Frostburn - Break, dealing Frost DMG equal to 750% of Hoshimi Miyabi's ATK and causing the target to enter the Frostburn state. All squad members accumulate 14% more Anomaly Buildup against enemies under the Frostburn state, but Hoshimi Miyabi cannot reapply Icefire to these enemies. The Frostburn state ends when Frostbite expires. While this state remains active, triggering another Attribute Anomaly will overwrite Frostbite and remove Frostburn. Upon triggering Frostburn - Break, Hoshimi Miyabi obtains 1 point of Fallen Frost. This effect can trigger once every 10s."
+            },
+            {
+                "id": 14,
+                "skill": "Core",
+                "name": "Additional Ability: Bask in Frost",
+                "description": "When another character in your squad shares the same Attribute or Faction: Basic Attack: Shimotsuki DMG increases by 60%. When any squad member triggers Disorder, Hoshimi Miyabi obtains 2 points of Fallen Frost and Basic Attack: Shimotsuki during the next Shimotsuki Stance will ignore 30% of the target's Ice RES."
+            }
+        ],
+        "mindscape-cinema": [
+            {
+                "id": 1,
+                "name": "Frost Atop the Snow",
+                "description": "While in Shimotsuki Stance, every 1 point of Fallen Frost consumed will allow Basic Attack: Shimotsuki to ignore 6% of DEF, stacking up to 6 times and lasting until Shimotsuki Stance ends. When the slash for charge level three of Basic Attack: Shimotsuki hits an enemy under Frostburn, it will immediately remove the Frostburn state and increase all squad members' Anomaly Buildup Rate by 20% for 10s.",
+                "alt": "Miyabi has loved reciting poems about the cold since she was a child. She might not understand them completely, but she still does it every day. Before long, she came to realize their true meaning. She found clarity not on a still and snowy night, but rather upon the battlefield."
+            },
+            {
+                "id": 2,
+                "name": "Precision Discharge",
+                "description": "Basic Attack: Kazahana and Dodge Counter DMG increases by 30%. Hoshimi Miyabi gains 1 point of Fallen Frost when the final move of the 5th hit of Basic Attack: Kazahana hits an enemy. Upon entering the battlefield, Hoshimi Miyabi immediately obtains 6 points of Fallen Frost and her CRIT Rate increases by 15%.",
+                "alt": "'As goes the sword, so goes the heart.' This is a key disciplinary concept of the Hoshimi school of swordsmanship. Defeating the enemy is but the first step on the path to victory. Maintaining constant vigilance at all times is the true way of a warrior."
+            },
+            {
+                "id": 3,
+                "name": "Martial Discipline",
+                "description":"Basic Attack, Dodge, Assist, Special Attack, and Chain Attack Lv. +2",
+                "alt": "Miyabi, whose family has a tradition of martial arts, has excellent training habits. Her commitment to swordsmanship practice is unwavering. What? A meeting? She won't be going."
+            },
+            {
+                "id": 4,
+                "name": "Rupture",
+                "description": "Frostburn - Break DMG increases by 30%. Upon triggering Frostburn - Break, Hoshimi Miyabi generates 250 more Decibels.",
+                "alt": "Reciting poems during the heat of battle can regulate one's respiratory rhythm. Whether it's her mindset or breathing, Miyabi always keeps calm."
+            },
+            {
+                "id": 5,
+                "name": "Anniversary",
+                "description": "Basic Attack, Dodge, Assist, Special Attack, and Chain Attack Lv. +2",
+                "alt": "The girl arrives at that all too familiar place with flowers, her breath misting and then vanishing into the cold air. Her fingers ghost over that name on the monument. Everything is quiet, like that most silence observer."
+            },
+            {
+                "id": 6,
+                "name": "Prodigious Talent",
+                "description": "During Shimotsuki Stance, Hoshimi Miyabi obtains Polar, which increases Basic Attack: Shimotsuki DMG by 30%. After obtaining Polar, Hoshimi Miyabi will automatically draw her blade and unleash powerful slashes based on the current charge level upon consuming Fallen Frost. Before Fallen Frost is completely depleted, the draw and slashes will not interrupt charging under Shimotsuki Stance. Each occurrence of Shimotsuki Stance can perform up to 3 draws and slashes.",
+                "alt": "The more she battles, the more it becomes evident to outsiders: If there is a god of swordsmanship, it must greatly favor Hoshimi Miyabi."
             }
         ]
         

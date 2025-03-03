@@ -155,14 +155,14 @@ export default function MainAppBar() {
                     horizontal: 'left',
                 }}
             >
-                <MenuItem onClick={() => handleSelectAgentMenu('Anby Demara')}>
+                <MenuItem onClick={() => handleSelectAgentMenu('Anby')}>
                 <Typography sx={{ textAlign: 'center' }}>Anby Demara</Typography>
                 </MenuItem>
-                <MenuItem onClick={() => handleSelectAgentMenu('Nicole')}>
-                <Typography sx={{ textAlign: 'center' }}>Nicole</Typography>
+                <MenuItem onClick={() => handleSelectAgentMenu('Miyabi')}>
+                <Typography sx={{ textAlign: 'center' }}>Miyabi</Typography>
                 </MenuItem>
                 <MenuItem onClick={() => handleSelectAgentMenu('Billy')}>
-                <Typography sx={{ textAlign: 'center' }}>Billy</Typography>
+                <Typography sx={{ textAlign: 'center' }}></Typography>
                 </MenuItem>
             </Menu>
 
