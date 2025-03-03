@@ -8,10 +8,16 @@ const AgentPage = ({ agent }) => {
 
     useEffect(() => {
         if (agent) {
-            if (agent.attribute === "Frost") {
+            if (agent.attribute === "Frost" || agent.attribute === "Ice") {
                 document.body.style.background = "linear-gradient(135deg, #A9D8E8, #E8F6FD)";
             } else if (agent.attribute === "Electric") {
                 document.body.style.background = "linear-gradient(135deg, #C7D8FF, #5A87E7)";
+            } else if (agent.attribute === "Physical") {
+                document.body.style.background = "linear-gradient(135deg, #FFD8C7,rgb(206, 207, 171))";
+            } else if (agent.attribute === "Fire") {
+                document.body.style.background = "linear-gradient(135deg, #FFD9D9,rgb(190, 125, 125))";
+            } else if (agent.attribute === "Ether") {
+                document.body.style.background = "linear-gradient(135deg, #F2D8FF,rgb(96, 75, 114))";
             } else {
                 document.body.style.backgroundColor = "";
             }
@@ -47,7 +53,7 @@ const AgentPage = ({ agent }) => {
                             <p><strong>Gender:</strong> {agent.gender}</p>
                             <p><strong>Height:</strong> {agent.height} cm</p>
                             <p><strong>Birthday:</strong> {agent.birthday}</p>
-                            <p><strong>Released:</strong> Versi1on {agent.version}</p>
+                            <p><strong>Released:</strong> Version {agent.version}</p>
                         </div>
                     </div>
                     <p style={{ fontSize: '1.25rem'}}><strong>Signature W-Engine:</strong> {agent.weapon.weaponName}</p>
