@@ -32,9 +32,32 @@ const AgentPage = ({ agent }) => {
         return <div>Loading...</div>;
     }
 
+    const getImagePath = (type, value) => {
+        return `./public/images/assets/${type}/${value.toLowerCase()}.png`;
+    }
+
     return (
         <div>
-            <div style={{ display: 'flex', width: '80rem'}}>
+            <div style={{ display: 'flex', width: '80rem', padding: "0 5rem" }}>
+                
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                    <img
+                        src={getImagePath('attribute', agent.attribute)}
+                        alt={agent.attribute}
+                        width={200}
+                    />
+                    <img 
+                        src={getImagePath('role', agent.role)}
+                        alt={agent.role}
+                        width={200}
+                    />
+                    <img
+                        src={getImagePath('rarity', agent.rarity)}
+                        alt={agent.rarity}
+                        width={200}
+                    />
+                </div>
+
                 <img
                     src={agent.image}
                     alt={agent.name}
@@ -66,6 +89,7 @@ const AgentPage = ({ agent }) => {
                     <p><strong>Sub Stat:</strong> {agent.weapon.weaponSubStat}</p>
                     <p style={{ textAlign: "justify" }}><strong>Description:</strong> {agent.weapon.weaponDescription}</p>
                 </div>
+
             </div>
 
             <hr style={{ margin: '2rem 0' }} />
@@ -92,7 +116,8 @@ const AgentPage = ({ agent }) => {
                     </div>
                 ))}
             </div>
-
+            
+            
         </div>
     );
 };
