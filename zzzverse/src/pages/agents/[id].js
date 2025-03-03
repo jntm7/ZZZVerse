@@ -1,9 +1,26 @@
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 import fs from 'fs';
 import path from 'path';
 
 const AgentPage = ({ agent }) => {
     const router = useRouter();
+
+    useEffect(() => {
+        if (agent) {
+            if (agent.attribute === "Frost") {
+                document.body.style.background = "linear-gradient(135deg, #A9D8E8, #E8F6FD)";
+            } else if (agent.attribute === "Electric") {
+                document.body.style.background = "linear-gradient(135deg, #C7D8FF, #5A87E7)";
+            } else {
+                document.body.style.backgroundColor = "";
+            }
+        }
+
+        return () => {
+            document.body.style.backgroundColor = "";
+        };
+    }, [agent]);
 
     if (router.isFallback) {
         return <div>Loading...</div>;
@@ -11,15 +28,15 @@ const AgentPage = ({ agent }) => {
 
     return (
         <div>
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', width: '80rem'}}>
                 <img
                     src={agent.image}
                     alt={agent.name}
-                    width={500}
+                    width={600}
                 />
                 <div style={{ marginLeft: '7rem', marginTop: '5rem' }}>
                     <h1>{agent.name}</h1>
-                    <div style= {{display: "flex", gap: "3rem" }}>
+                    <div style= {{display: "flex", gap: "5rem" }}>
                         <div>
                             <p><strong>Attribute:</strong> {agent.attribute}</p>
                             <p><strong>Role:</strong> {agent.role}</p>
@@ -30,7 +47,7 @@ const AgentPage = ({ agent }) => {
                             <p><strong>Gender:</strong> {agent.gender}</p>
                             <p><strong>Height:</strong> {agent.height} cm</p>
                             <p><strong>Birthday:</strong> {agent.birthday}</p>
-                            <p><strong>Released:</strong> Version {agent.version}</p>
+                            <p><strong>Released:</strong> Versi1on {agent.version}</p>
                         </div>
                     </div>
                     <p style={{ fontSize: '1.25rem'}}><strong>Signature W-Engine:</strong> {agent.weapon.weaponName}</p>
@@ -41,34 +58,35 @@ const AgentPage = ({ agent }) => {
                     />
                     <p><strong>Base Stat:</strong> {agent.weapon.weaponBaseStat}</p>
                     <p><strong>Sub Stat:</strong> {agent.weapon.weaponSubStat}</p>
-                    <p><strong>Description:</strong> {agent.weapon.weaponDescription}</p>
+                    <p style={{ textAlign: "justify" }}><strong>Description:</strong> {agent.weapon.weaponDescription}</p>
                 </div>
             </div>
 
             <hr style={{ margin: '2rem 0' }} />
 
-            <h2>Abilities</h2>
-            <ul>
+            <div style={{ textAlign: "justify", padding: "0 5rem" }}>
+                <h2>Abilities</h2>
                 {agent.abilities.map((ability) => (
-                    <li key={ability.id} style={{ marginBottom: '1.5rem' }}>
-                        <strong>{ability.name}</strong><br />
-                        {ability.description}
-                    </li>
+                    <div key={ability.id} style={{ marginBottom: '1.5rem', marginLeft: '1.5rem' }}>
+                        <h3>{ability.name}</h3>
+                        <p>{ability.description}</p>
+                    </div>
                 ))}
-            </ul>
+            </div>
 
             <hr style={{ margin: '2rem 0' }} />
 
-            <h2>Mindscape Cinemas</h2>
-            <ol>
+            <div style={{ textAlign: "justify", padding: "0 5rem" }}>
+                <h2>Mindscape Cinemas</h2>
                 {agent["mindscape-cinema"].map((mindscape) => (
-                    <li key={mindscape.id} style={{ marginBottom: '1.5rem' }}>
-                        <strong style={{ display: 'block', marginTop: '0.25rem' }}>{mindscape.name}</strong><br />
-                        {mindscape.description}<br />
+                    <div key={mindscape.id} style={{ marginBottom: '1.5rem', marginLeft: '1.5rem' }}>
+                        <h3>{mindscape.id}. {mindscape.name}</h3>
+                        <p>{mindscape.description}</p>
                         <em style={{ display: 'block', marginTop: '0.5rem' }}>{mindscape.alt}</em>
-                    </li>
+                    </div>
                 ))}
-            </ol>
+            </div>
+
         </div>
     );
 };
